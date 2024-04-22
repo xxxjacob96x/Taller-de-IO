@@ -1,13 +1,17 @@
 """ Cree un menu que sea capaz de guardar 
 el nombre, edad y notas de cada estudiante que el usuario desee ingresar,
-y que sea capaz de mostrar todos los usuarios, con su edad, notas
+el usuario cuenta con la informacion de base de dos estudiantesque son:
+[("Pedro", 26, [7,5,4]), ("Camila", 24, [7,4,6])]
+Este sistema debe ser capaz de mostrar todos los usuarios, con su edad, notas
 y su promedio de notas por cada alumno,
 y el promedio de notas de todos los alumnos. """
 
-estudiantes = [("Jacob", 26, [7,5,4]), ("Camila", 24, [7,4,6])]
+estudiantes = [("Pedro", 26, [7,5,4]), ("Camila", 24, [7,4,6])]
 
 while True:
     print("""
+          
+          
         ====== Gestor de Alumnos ======
           1) Ingresar Alumnos 
           2) Mostrar Alumnos 

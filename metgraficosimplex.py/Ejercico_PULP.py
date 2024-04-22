@@ -7,16 +7,6 @@ problema = LpProblem("Problema_Optimizacio_PL", LpMaximize)
 
 x1 = LpVariable("X1", lowBound=0 , cat= 'Integer')
 x2 = LpVariable("X2", lowBound=0 , cat= 'Integer')
-""" 
-Se inicia definiendo el problema con LpProblem como funcion de Pulp
-LpMaximize es la funcion que se utiliza en pulp
-para el caso de minimizacion en el modulo de PULP es cambiar el mx por el in "LpMimize"
-
-LpVariable es una funcion del pulp para definir una varable 
-lowBound, tambien es una funcion de pulp que permite ingresar la no negatividad del problem 
-cat, otra funcion que nos permite ...
-itenger ...
-"""
 
 #se define la Funcion Objetivo 
 
@@ -33,6 +23,28 @@ problema += 3*x1 +  x2 == 3
 problema.solve()
 
 print("")
-print("El optimo se obtiene con x1= ", x1.varValue, "y x2= ",x2.varValue)
+print("El optimo se obtiene con x1= ", x1.varValue, "y x2= ",x2.varValue, "El optimo de Z es: ",problema.objective.value() )
 
 
+""" 
+Se inicia definiendo el problema con LpProblem como funcion de Pulp
+
+LpMaximize es la funcion que se utiliza en pulp
+para el caso de minimizacion en el modulo de PULP es cambiar el mx por el in "LpMimize"
+
+LpVariable es una funcion del pulp para definir una varable 
+
+lowBound, tambien es una funcion de pulp que permite ingresar la no negatividad del problem 
+(lowBound: Este parámetro define el límite inferior para las variables. En tu código, 
+has establecido el límite inferior en 0 para x1 y x2, lo que significa que no pueden tomar valores negativos.)
+
+cat, otra funcion que nos permite ...
+
+'Integer',significa que las variables x1 y x2 son variables enteras (números enteros). 
+Otras categorías comunes incluyen 'Continuous' (variables continuas) y 'Binary' (variables binarias).
+
+varValue: Esta es una propiedad de las variables en PuLP que te permite acceder al valor óptimo al que 
+la variable se ha resuelto después de resolver el problema de programación lineal. 
+Por ejemplo, x1.varValue te da el valor óptimo de x1 después de resolver el problema.
+
+"""

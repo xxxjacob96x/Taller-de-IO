@@ -1,11 +1,8 @@
 nombres = ["juan", "Pablo", "Laura "]
-edades = [23 , 25 , 21]
+edades = [23 , 25 , 21,24,26,27,29,]
 aprobados = [True, False, True]
 
-nombres.insert(1 ,"Pedro")
-edades. insert( 1 , 23)
-aprobados.insert(1 , True)
+edades_copia =edades.copy()
 
-print(nombres)
+print(edades_copia)
 print(edades)
-print(aprobados)

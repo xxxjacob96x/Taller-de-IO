@@ -37,7 +37,8 @@ while True:
             nota = float(input("ingrese una nota: "))
             #Agregamos la nota a la lista notas 
             notas.append(nota)
-            alumno = (nombre, edad, notas)
+            
+        alumno = (nombre, edad, notas)
         Estudiantes.append(alumno)
 
     elif opcion == 2:

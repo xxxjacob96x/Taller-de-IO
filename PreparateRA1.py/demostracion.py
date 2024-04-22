@@ -38,6 +38,5 @@ def main():
             print("Opcion no valida. Porfavor elija 1 o 2: ") 
 
 if __name__ == '__main__':
-
     main()
 
