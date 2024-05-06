@@ -15,6 +15,7 @@ comenzamos a realizar el ciclo while para hacer programa que permitira
 hacer el menu solicitado """
 
 while True:
+
     #Creamos el menu de entrada que permitira mostrar las opciones al usuario
     print(""" 
           ======= Menu de Registro de Estudiantes =======

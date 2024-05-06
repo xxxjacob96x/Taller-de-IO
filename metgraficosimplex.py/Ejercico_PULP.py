@@ -38,7 +38,9 @@ lowBound, tambien es una funcion de pulp que permite ingresar la no negatividad 
 (lowBound: Este parámetro define el límite inferior para las variables. En tu código, 
 has establecido el límite inferior en 0 para x1 y x2, lo que significa que no pueden tomar valores negativos.)
 
-cat, otra funcion que nos permite ...
+cat, otra funcion, es un parámetro utilizado al definir variables en PuLP. 
+Indica la categoría o tipo de la variable en el problema de programación lineal. 
+En este caso, 'Integer' especifica que las variables x1 y x2 son variables enteras (números enteros) en lugar de variables continuas.
 
 'Integer',significa que las variables x1 y x2 son variables enteras (números enteros). 
 Otras categorías comunes incluyen 'Continuous' (variables continuas) y 'Binary' (variables binarias).
