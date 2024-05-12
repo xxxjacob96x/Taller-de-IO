@@ -62,7 +62,7 @@ LAS UNIDADES TOTALES REQUERIDAS POR ESTE MISMO.
 ## Importamos pulp para armar el modelo de programación lineal
 ## Importamos pandas para crear un dataframe que cálcule el análisis de sensibilidad
 import pulp
-import pandas as pd
+import pandas as pd #crear data frame, para crear una tabla
 
 # Creamos el modelo principal, indicando el sentido de la función objetivo
 model = pulp.LpProblem("Problema de la granja", pulp.LpMinimize)

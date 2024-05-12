@@ -49,4 +49,7 @@ varValue: Esta es una propiedad de las variables en PuLP que te permite acceder 
 la variable se ha resuelto después de resolver el problema de programación lineal. 
 Por ejemplo, x1.varValue te da el valor óptimo de x1 después de resolver el problema.
 
+La parte problema.objective.value() devuelve el valor óptimo de la función objetivo, es decir,
+el valor de la función objetivo cuando las variables toman los valores óptimos encontrados por el solver.
+
 """
