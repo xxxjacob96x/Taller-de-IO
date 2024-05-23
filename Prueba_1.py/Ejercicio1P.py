@@ -1,4 +1,5 @@
 def mostrar_menu():
+    print("\n==== Menu de Calculo de Sueldo ====")
     print("1. Ingresar pago por hora")
     print("2. Ingresar horas totales trabajadas")
     print("3. Calcular sueldo semanal")
@@ -12,7 +13,7 @@ def main():
 
     while True:
         mostrar_menu()
-        opcion = input("Seleccione una opción: ")
+        opcion = input("\nSeleccione una opción: ")
 
         if opcion == "1":
             PH = int(input("Ingrese el pago por hora: "))
