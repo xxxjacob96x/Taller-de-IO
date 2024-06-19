@@ -105,6 +105,7 @@ sensibilidad = [{'Restricción ':i,'Precio Sombra': j.pi, 'Holgura': j.slack}
                for i, j in model.constraints.items()]
 print(pd.DataFrame(sensibilidad))
 
+
 #print(sensibilidad)
 # PUNTO D #
 

@@ -14,36 +14,45 @@ Problema += 41*x1 + 36*x2 + 96*x3
 
 #punto E
 while True:
-    limite1 = int(input("Ingrese la disponibilidad nueva de A: "))
+    try:
+                
+        while True:
+            limite1 = int(input("Ingrese la disponibilidad nueva de A: "))
 
-    if limite1 >= 110 and limite1 <= 220:
-        break
-    else:
-        print("Ingrese un valor dentro del rango solicitado")
+            if limite1 >= 110 and limite1 <= 220:
+                break
+            else:
+                print("Ingrese un valor dentro del rango solicitado")
 
-while True:
-    limite2 = int(input("Ingrese la disponibilidad nueva de B: "))
+        while True:
+            limite2 = int(input("Ingrese la disponibilidad nueva de B: "))
 
-    if limite2 >= 18 and limite2 <= 25:
-        break
-    else:
-        print("Ingrese un valor dentro del rango solicitado")
+            if limite2 >= 18 and limite2 <= 25:
+                break
+            else:
+                print("Ingrese un valor dentro del rango solicitado")
 
-while True:
-    limite3 = int(input("Ingrese la disponibilidad nueva de C: "))
+        while True:
+            limite3 = int(input("Ingrese la disponibilidad nueva de C: "))
 
-    if limite3 >= 90 and limite3 <= 120:
-        break
-    else:
-        print("Ingrese un valor dentro del rango solicitado")
+            if limite3 >= 90 and limite3 <= 120:
+                break
+            else:
+                print("Ingrese un valor dentro del rango solicitado")
 
-while True:
-    limite4 = int(input("Ingrese la disponibilidad nueva de D: "))
+        while True:
+            limite4 = int(input("Ingrese la disponibilidad nueva de D: "))
 
-    if limite4 >= 14 and limite4 <= 80:
-        break
-    else:
-        print("Ingrese un valor dentro del rango solicitado")
+            if limite4 >= 14 and limite4 <= 80:
+                break
+            else:
+                print("Ingrese un valor dentro del rango solicitado")
+    except ValueError:
+        print("Error, ingrese un número Valido")
+        continue
+    break
+    
+
 
 # Definimos las restricciones del problema asociado
 Problema += 20*x1 + 30*x2 + 70*x3 >= limite1, "Nutriente A"

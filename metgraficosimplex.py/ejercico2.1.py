@@ -42,7 +42,7 @@ x2_values_2 = (72 - 6*x1_values) / 12
 # Graficar las restricciones y la región factible
 plt.plot(x1_values, x2_values_1, label='12*x1 + 8*x2 <= 96', color='blue')
 plt.plot(x1_values, x2_values_2, label='6*x1 + 12*x2 <= 72', color='green')
-plt.fill_between(x1_values,np.minimum.reduce([(96 - 12*x1_values) / 8, (72 - 6*x1_values) / 12]) , color='gray', alpha=0.5) #relleno entre 
+plt.fill_between(x1_values,np.minimum.reduce([x2_values_1, x2_values_2]) , color='gray', alpha=0.5) #relleno entre 
 #se hace el cambio por el where 
 """# np.minimun.redus, sabemos que np son son vectores, 
 entonces, con los valores de prueba que se pusieron en las 
@@ -58,7 +58,7 @@ plt.xlabel('x1 (Mesas)')
 plt.ylabel('x2 (Sillas)')
 plt.title('Región Factible del Problema de Optimización')
 plt.legend()
-plt.grid(True)
+#plt.grid(True)
 plt.xlim(0, 15)
 plt.ylim(0, 10)
 
